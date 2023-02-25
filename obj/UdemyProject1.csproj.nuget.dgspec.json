@@ -4,14 +4,99 @@
     "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj": {
+    "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj",
-        "projectName": "UdemyProject1",
-        "projectPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj",
+        "projectUniqueName": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
+        "projectName": "BulkyBook.DataAccess",
+        "projectPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj",
         "packagesPath": "C:\\Users\\tusha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\obj\\",
+        "outputPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tusha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.Models\\BulkyBook.Models.csproj": {
+                "projectPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.Models\\BulkyBook.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.Models\\BulkyBook.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.Models\\BulkyBook.Models.csproj",
+        "projectName": "BulkyBook.Models",
+        "projectPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.Models\\BulkyBook.Models.csproj",
+        "packagesPath": "C:\\Users\\tusha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tusha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +125,87 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj",
+        "projectName": "UdemyProject1",
+        "projectPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\UdemyProject1.csproj",
+        "packagesPath": "C:\\Users\\tusha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\UdemyProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\tusha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\tusha\\OneDrive\\Desktop\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -57,6 +223,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.12, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [

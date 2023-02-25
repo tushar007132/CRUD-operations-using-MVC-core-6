@@ -1,23 +1,22 @@
-﻿using BulkyBook.DataAccess.Data;
-using BulkyBook.DataAccess.Repository;
+﻿using BulkyBook.DataAccess.Repository;
 using BulkyBook.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace UdemyProject1.Controllers
 {
-    public class CategoryController : Controller
+    public class ProductController : Controller
     {
-        private readonly ICategoryRepository _db;
+        private readonly IProductRepository _db;
 
-        public CategoryController(ICategoryRepository db)
+        public ProductController(IProductRepository db)
         {
             _db = db;
         }
 
         public IActionResult Index()
         {
-            IEnumerable<Category> CategoryList = _db.GetAll();
-            return View(CategoryList);
+            IEnumerable<Product> ProductList = _db.GetAll();
+            return View(ProductList);
         }
 
         [HttpGet]
@@ -29,13 +28,13 @@ namespace UdemyProject1.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public IActionResult Create(Category obj)
+        public IActionResult Create(Product obj)
         {
             if (ModelState.IsValid)
             {
                 _db.Add(obj);
                 _db.Save();
-                TempData["success"] = "category created successfully";
+                TempData["success"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
 
@@ -47,23 +46,23 @@ namespace UdemyProject1.Controllers
         {
             if (id == null || id == 0) return NotFound();
 
-            var categoryFromDb = _db.GetFirstOrDefault(u=>u.id==id);
+            var ProductFromDb = _db.GetFirstOrDefault(u => u.Id == id);
 
-            if (categoryFromDb == null) return NotFound();
+            if (ProductFromDb == null) return NotFound();
 
-            return View(categoryFromDb);
+            return View(ProductFromDb);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public IActionResult Edit(Category obj)
+        public IActionResult Edit(Product obj)
         {
             if (ModelState.IsValid)
             {
                 _db.Update(obj);
                 _db.Save();
-                TempData["success"] = "category Edited successfully";
+                TempData["success"] = "Product Edited successfully";
                 return RedirectToAction("index");
             }
             return View(obj);
@@ -74,30 +73,28 @@ namespace UdemyProject1.Controllers
         {
             if (id == null || id == 0) return NotFound();
 
-            var categoryFromDb = _db.GetFirstOrDefault(u=>u.id==id);
+            var ProductFromDb = _db.GetFirstOrDefault(u => u.Id == id);
 
-            if (categoryFromDb == null) return NotFound();
+            if (ProductFromDb == null) return NotFound();
 
-            return View(categoryFromDb);
+            return View(ProductFromDb);
         }
-
-
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
 
         public IActionResult DeletePost(int? id)
         {
-            var obj = _db.GetFirstOrDefault(u=>u.id==id);
+            var obj = _db.GetFirstOrDefault(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
             }
             _db.Remove(obj);
             _db.Save();
-            TempData["success"] = "category Deleted successfully";
+            TempData["success"] = "Product Deleted successfully";
             return RedirectToAction("index");
         }
+
     }
 }
